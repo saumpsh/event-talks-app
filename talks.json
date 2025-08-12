@@ -1,0 +1,44 @@
+[
+  {
+    "title": "The Future of Artificial Intelligence",
+    "speakers": ["Dr. Evelyn Reed"],
+    "categories": ["AI", "Future Tech"],
+    "duration": 60,
+    "description": "A deep dive into the future of AI and its potential impact on society."
+  },
+  {
+    "title": "Advanced JavaScript Techniques",
+    "speakers": ["John Doe", "Jane Smith"],
+    "categories": ["Web Dev", "JavaScript"],
+    "duration": 60,
+    "description": "Explore advanced concepts and techniques in JavaScript for building high-performance web applications."
+  },
+  {
+    "title": "Cybersecurity in the Modern Age",
+    "speakers": ["Dr. Michael Chen"],
+    "categories": ["Security", "Cybersecurity"],
+    "duration": 60,
+    "description": "An overview of the current cybersecurity landscape and how to protect against emerging threats."
+  },
+  {
+    "title": "Building Scalable Cloud Applications",
+    "speakers": ["Maria Garcia"],
+    "categories": ["Cloud", "Architecture"],
+    "duration": 60,
+    "description": "Learn how to design and build scalable and resilient applications in the cloud."
+  },
+  {
+    "title": "The Ethics of Machine Learning",
+    "speakers": ["Professor David Lee"],
+    "categories": ["AI", "Ethics", "Machine Learning"],
+    "duration": 60,
+    "description": "A discussion on the ethical considerations and challenges in the field of machine learning."
+  },
+  {
+    "title": "A Practical Introduction to Quantum Computing",
+    "speakers": ["Dr. Sarah Jones", "Dr. Ben Carter"],
+    "categories": ["Quantum", "Future Tech"],
+    "duration": 60,
+    "description": "Get a hands-on introduction to the world of quantum computing and its potential applications."
+  }
+]
