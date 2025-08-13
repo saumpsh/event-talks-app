@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
   searchBar.addEventListener('input', (e) => {
     const searchTerm = e.target.value.toLowerCase();
     const filteredTalks = talks.filter(talk => {
-      return talk.categories.some(category => category.toLowerCase().includes(searchTerm));
+      const inCategory = talk.categories.some(category => category.toLowerCase().includes(searchTerm));
+      const inSpeaker = talk.speakers.some(speaker => speaker.toLowerCase().includes(searchTerm));
+      return inCategory || inSpeaker;
     });
     renderSchedule(filteredTalks);
   });
