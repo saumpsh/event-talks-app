@@ -4,10 +4,20 @@ document.addEventListener('DOMContentLoaded', () => {
   let talks = [];
 
   fetch('/api/talks')
+    .then(response => {
+      if (!response.ok) {
+        console.log('Server not running, fetching talks.json directly.');
+        return fetch('talks.json');
+      }
+      return response;
+    })
     .then(response => response.json())
     .then(data => {
       talks = data;
       renderSchedule(talks);
+    })
+    .catch(error => {
+      console.error('Error fetching talks:', error);
     });
 
   searchBar.addEventListener('input', (e) => {
