@@ -22,6 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderSchedule(talksToRender) {
     scheduleContainer.innerHTML = '';
+
+    if (talksToRender.length === 0) {
+      scheduleContainer.innerHTML = '<p class="no-results">No talks found matching your search.</p>';
+      return;
+    }
+
     let currentTime = new Date();
     currentTime.setHours(10, 0, 0, 0); // Event starts at 10:00 AM
 
